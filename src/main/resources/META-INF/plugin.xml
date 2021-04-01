@@ -6,14 +6,22 @@
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
-        <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
+        <!-- Add your extensions here -->
     </extensions>
 
-    <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="Analyze.Structure"
+                class="org.jetbrains.plugins.kotlin.analyzer.AnalyzeStructureAction"
+                description="Analyze structure"
+                text="Analyze Structure">
+            <add-to-group anchor="last" group-id="ProjectViewPopupMenu"/>
+            <add-to-group anchor="last" group-id="StructureViewPopupMenu"/>
+        </action>
+
+    </actions>
+
 </idea-plugin>
