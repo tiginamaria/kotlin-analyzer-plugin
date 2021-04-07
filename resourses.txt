@@ -1,0 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+
+pandas~=1.1.4
+matplotlib~=3.3.2
