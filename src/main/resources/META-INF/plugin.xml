@@ -15,7 +15,7 @@
 
     <actions>
         <action id="Analyze.Structure"
-                class="org.jetbrains.plugins.kotlin.analyzer.AnalyzeStructureAction"
+                class="org.jetbrains.plugins.kotlin.analyzer.actions.CollectStatsAction"
                 description="Analyze structure"
                 text="Analyze Structure">
             <add-to-group anchor="last" group-id="ProjectViewPopupMenu"/>
