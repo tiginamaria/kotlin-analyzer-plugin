@@ -7,7 +7,7 @@ import javax.swing.JFileChooser
 import javax.swing.JPanel
 
 /**
- * Dialog window for directory selection where file with statistics will be placed.
+ * [StatsPathDialog] id dialog window for directory selection where file with statistics will be placed.
  */
 class StatsPathDialog(currentPath: String? = null) : DialogWrapper(true) {
 

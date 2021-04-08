@@ -2,7 +2,6 @@ package org.jetbrains.plugins.kotlin.analyzer.actions.collectors
 
 import org.jetbrains.kotlin.psi.KtElement
 
-
 /** This class stores statistics about each [KtElement] occurrence in file by [KtElement] tag. */
 class StatsStorage {
     private val statistics = mutableMapOf<String, Int>()

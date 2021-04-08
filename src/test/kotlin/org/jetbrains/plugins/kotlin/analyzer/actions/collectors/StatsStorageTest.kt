@@ -1,9 +1,9 @@
 package org.jetbrains.plugins.kotlin.analyzer.actions.collectors
 
-import org.junit.Test
-
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNull
 import org.junit.Before
+import org.junit.Test
 
 class StatsStorageTest {
 
