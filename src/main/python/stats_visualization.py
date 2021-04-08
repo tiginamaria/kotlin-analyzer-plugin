@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import sys
 
-if __name__ == '__main__':
-    path_to_stats = sys.argv[1]
-    df = pd.read_csv(path_to_stats)
+
+def show_bar_plot(path_to_csv: str):
+    df = pd.read_csv(path_to_csv)
     stats_df = pd.DataFrame({'KtElements': df.columns.values,
                              'Occurrence': df.values[0]})
     ax = stats_df.plot.barh(x='KtElements', y='Occurrence')
@@ -13,3 +13,8 @@ if __name__ == '__main__':
     plt.title(path_to_stats)
     plt.tight_layout()
     plt.show()
+
+
+if __name__ == '__main__':
+    path_to_stats = sys.argv[1]
+    show_bar_plot(path_to_stats)
