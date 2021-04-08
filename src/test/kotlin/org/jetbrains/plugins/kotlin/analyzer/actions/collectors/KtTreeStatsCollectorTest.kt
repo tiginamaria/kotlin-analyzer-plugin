@@ -58,14 +58,16 @@ class KtTreeStatsCollectorTest(
         fun data(): Iterable<Array<Any>> {
             return listOf(
                 arrayOf(
-                    "EmptyClass.kt", mapOf(
+                    "EmptyClass.kt",
+                    mapOf(
                         "PACKAGE_DIRECTIVE" to 1,
                         "CLASS" to 1,
                         "PRIMARY_CONSTRUCTOR" to null
                     )
                 ),
                 arrayOf(
-                    "TwoClasses.kt", mapOf(
+                    "TwoClasses.kt",
+                    mapOf(
                         "PACKAGE_DIRECTIVE" to 1,
                         "REFERENCE_EXPRESSION" to 4,
                         "CLASS" to 2,
@@ -77,7 +79,8 @@ class KtTreeStatsCollectorTest(
                     )
                 ),
                 arrayOf(
-                    "AbstractClass.kt", mapOf(
+                    "AbstractClass.kt",
+                    mapOf(
                         "CLASS" to 1,
                         "STRING_TEMPLATE" to 2,
                         "LITERAL_STRING_TEMPLATE_ENTRY" to 1,
@@ -90,21 +93,24 @@ class KtTreeStatsCollectorTest(
                     )
                 ),
                 arrayOf(
-                    "GenericClass.kt", mapOf(
+                    "GenericClass.kt",
+                    mapOf(
                         "CLASS" to 1,
                         "TYPE_PROJECTION" to 1,
                         "CALL_EXPRESSION" to 1,
                     )
                 ),
                 arrayOf(
-                    "InterfaceClass.kt", mapOf(
+                    "InterfaceClass.kt",
+                    mapOf(
                         "CLASS" to 1,
                         "FUN" to 2,
                         "BLOCK" to 1,
                     )
                 ),
                 arrayOf(
-                    "LambdaClass.kt", mapOf(
+                    "LambdaClass.kt",
+                    mapOf(
                         "CLASS" to 1,
                         "FUN" to 1,
                         "BLOCK" to 3,
@@ -120,7 +126,8 @@ class KtTreeStatsCollectorTest(
                     )
                 ),
                 arrayOf(
-                    "OpenClass.kt", mapOf(
+                    "OpenClass.kt",
+                    mapOf(
                         "CLASS" to 2,
                         "MODIFIER_LIST" to 6,
                         "IF" to 2,
@@ -133,7 +140,8 @@ class KtTreeStatsCollectorTest(
                     )
                 ),
                 arrayOf(
-                    "CompanionObjectClass.kt", mapOf(
+                    "CompanionObjectClass.kt",
+                    mapOf(
                         "CLASS" to 2,
                         "OBJECT_DECLARATION" to 1,
                         "TYPE_PROJECTION" to 2,
