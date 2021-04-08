@@ -2,7 +2,9 @@
     <id>org.jetbrains.plugins.template</id>
     <name>Kotlin Classes Statistics Analysis</name>
     <vendor>JetBrains</vendor>
-
+    <description>Plugin for kotlin files structure analysis. The current version provide abilities to collect occurrence
+        statistics of all element types PSI tree.
+    </description>
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
