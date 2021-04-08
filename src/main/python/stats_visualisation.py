@@ -7,7 +7,9 @@ if __name__ == '__main__':
     df = pd.read_csv(path_to_stats)
     stats_df = pd.DataFrame({'KtElements': df.columns.values,
                              'Occurrence': df.values[0]})
-    stats_df.plot.barh(x='KtElements', y='Occurrence')
-    plt.tight_layout()
+    ax = stats_df.plot.barh(x='KtElements', y='Occurrence')
+    for p, v in zip(ax.patches, df.values[0]):
+        ax.annotate(str(v), (v + p.get_x(), p.get_y()))
     plt.title(path_to_stats)
+    plt.tight_layout()
     plt.show()

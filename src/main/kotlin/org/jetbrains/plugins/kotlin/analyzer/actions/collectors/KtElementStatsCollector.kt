@@ -1,14 +1,14 @@
 package org.jetbrains.plugins.kotlin.analyzer.actions.collectors
 
 import org.jetbrains.kotlin.psi.KtElement
+import org.jetbrains.kotlin.psi.KtVisitorVoid
 
-class KtElementStatsCollector(statsStorage: StatsStorage) : KtNodeStatsCollector(statsStorage) {
 
-    companion object {
-        private const val UNKNOWN_ELEMENT_TAG = "UNKNOWN_ELEMENT"
-    }
+/** This class collects statistics about [KtElement]. */
+class KtElementStatsCollector(private val statsStorage: StatsStorage) : KtVisitorVoid() {
 
+    /** Increase occurrence of received [KtElement] */
     override fun visitKtElement(element: KtElement) {
-        updateStatistics(element.toString(), 1)
+        statsStorage.inc(element.toString(), 1)
     }
 }

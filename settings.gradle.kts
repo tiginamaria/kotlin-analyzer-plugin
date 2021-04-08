@@ -1,1 +1,1 @@
-rootProject.name = "Kotlin Structure Analyser Plugin"
+rootProject.name = "Kotlin Structure Analyzer Plugin"

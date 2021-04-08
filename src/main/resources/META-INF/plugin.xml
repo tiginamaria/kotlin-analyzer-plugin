@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>org.jetbrains.plugins.template</id>
-    <name>Template</name>
+    <name>Kotlin Classes Statistics Analysis</name>
     <vendor>JetBrains</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -14,10 +14,10 @@
     </extensions>
 
     <actions>
-        <action id="Analyze.Structure"
+        <action id="Collect.Statistics"
                 class="org.jetbrains.plugins.kotlin.analyzer.actions.CollectStatsAction"
-                description="Analyze structure"
-                text="Analyze Structure">
+                description="Collect statistics"
+                text="Collect Statistics">
             <add-to-group anchor="last" group-id="ProjectViewPopupMenu"/>
             <add-to-group anchor="last" group-id="StructureViewPopupMenu"/>
         </action>
